@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "pokebag",
+    "name": "Pok\u00e9bag",
+    "description": "",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["arthou"],
+    "credits": "made by arthou",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

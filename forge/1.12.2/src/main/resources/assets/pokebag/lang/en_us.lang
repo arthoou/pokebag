@@ -1,0 +1,12 @@
+itemGroup.pokebag=Pok\u00e9bag
+item.pokebag.normal.name=Normal Pok\u00e9bag
+item.pokebag.great.name=Great Pok\u00e9bag
+item.pokebag.ultra.name=Ultra Pok\u00e9bag
+item.pokebag.master.name=Master Pok\u00e9bag
+item.pokebag.pokebag_normal.name=Normal Pok\u00e9bag
+item.pokebag.pokebag_great.name=Great Pok\u00e9bag
+item.pokebag.pokebag_ultra.name=Ultra Pok\u00e9bag
+item.pokebag.pokebag_master.name=Master Pok\u00e9bag
+container.pokebag=Pok\u00e9bag
+tooltip.pokebag.slots=%s slots
+tooltip.pokebag.allowed=Stores berries, potions and Pok\u00e9 Balls

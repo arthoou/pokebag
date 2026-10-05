@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net/' }
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-20190215.204323-39'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+version = project.mod_version
+group = project.mod_group
+archivesBaseName = project.mod_id
+
+sourceCompatibility = targetCompatibility = '1.8'
+
+minecraft {
+    version = "${project.minecraft_version}-${project.forge_version}"
+    runDir = 'run'
+    mappings = project.mappings_version
+    makeObfSourceJar = false
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'mcversion', project.minecraft_version
+
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft_version
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
